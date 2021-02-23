@@ -21,6 +21,7 @@
   --line-height: 1.7;
   --sprout: #8050ea;
   --background1: #181a20;
+  --background2: #5e6272;
 }
 
 html {
@@ -170,7 +171,7 @@ hr {
 }
 
 .bg-miro {
-  background-color: var(--background1) !important;
+  background-color: var(--background1);
 }
 
 .bg-sprout {
@@ -400,6 +401,30 @@ hr {
 .shadow-focus-none:focus,
 .shadow-active-none:active {
   box-shadow: none !important;
+}
+
+.button {
+  background-color: #8159e2;
+  border-radius: 30px;
+  color: white;
+  padding: 10px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.members {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.members img {
+  width: auto;
+  height: 100%;
 }
 
 /* Margin */
@@ -1277,6 +1302,10 @@ hr {
   flex-direction: row;
   flex-wrap: no-wrap;
   padding: 12px 0;
+}
+
+.iconic-item-anchor:hover {
+  background-color: var(--background2);
 }
 
 .iconic-item .iconic-content {
