@@ -5,7 +5,7 @@
  * License under CC 4.0 ()
  */
 
- @font-face {
+@font-face {
   font-family: myFont;
   src: url(/assets/fonts/Kollektif-Bold.ttf);
 }
@@ -140,6 +140,7 @@ hr {
 .fs-vvvlarge {
   font-size: 72px !important;
 }
+
 .fw-light {
   font-weight: 300 !important;
 }
@@ -1176,7 +1177,7 @@ hr {
   height: 100%;
   background-color: rgba(56, 51, 64, 0.6);
 }
-.img-contain{
+.img-contain {
   width: 100%;
   height: auto;
   max-width: 100%;
@@ -2581,6 +2582,10 @@ hr {
   display: block;
   text-align: center;
 }
+
+/* .title {
+  margin-bottom: -10px;
+} */
 
 .team-avatar {
   display: inline-block;
