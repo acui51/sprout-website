@@ -47,6 +47,7 @@ a {
   width: 15%;
   top: -30px;
   left: 16px;
+  z-index: -10;
 }
 a:hover {
   color: #7b50e6;
