@@ -79,21 +79,6 @@
 
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav ml-auto mt-3 mt-lg-0">
-            <!-- <li class="nav-item dropdown active">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Home</a
-              >
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item active" href="index.html">Homepage 1</a>
-                <a class="dropdown-item" href="index-2.html">Homepage 2</a>
-              </div>
-            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
@@ -115,27 +100,33 @@
 
     <!---------- HERO PAGE SECTION ---------->
     <div class="page-hero-section bg-image hero-home-1 wow fadeInUp">
-      <img
+      <!-- <img
         class="hero-background"
         src="./assets/hero-background-copy.png"
-      />
+      /> -->
       <div class="hero-caption pt-5">
         <div class="container h-100 mt-5">
           <div class="row align-items-center h-100">
-            <div class="col-lg-8 wow fadeInUp">
-                <span class="fs-vvvlarge fw-bold title">connect</span>
-                <br/>
-                <span class="fs-vvvlarge fw-bold title">creatively</span>
-                <br/>
-              <a href="#" class="btn btn-dark rounded-pill">Try Prototype</a>
+            <div class="col-lg-6 wow fadeInUp">
+                <div class="title">
+                  <span class="fs-vvvlarge fw-bold title">connect</span>
+                </div>
+                <div class="title mb-2">
+                  <span class="fs-vvvlarge fw-bold title">creatively</span>
+                </div>
+                <a href="#" class="btn btn-dark rounded-pill">Try Prototype</a>
             </div>
-            <div class="col-lg-4 d-none d-lg-block wow zoomIn">
-              <div class="img-place floating-animate">
+            <div class="col-lg-6 d-none d-lg-block wow zoomIn">
+              <div class="bubbles-container floating-animate">
+                <img
+                class="hero-background"
+                src="./assets/hero-background-copy.png"
+              />
                 <img src="./assets/img/bubbles.png" />
               </div>
             </div>
             <div class="hero-move-down wow fadeInUp">
-              <a class="arrow-down" href="#info">
+              <a class="arrow-down" href="#mission">
                 <i class="fas fa-arrow-down fa-lg hero-arrow-down"></i>
               </a>
             </div>
@@ -145,23 +136,51 @@
     </div>
     <!-- End Header -->
 
+
     <!-- Mission -->
-    <div class="page-section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class = "col-sm-5 col-lg-4 pr-6">
-            <img class="pastleBubble" src="./assets/img/ellipse1.png"/>
-            <p class = "fs-large fw-bold" style = "position: absolute;">Growth in the music industry revolves around networking</p>
-            <p class = "mt-7">It is how creators come across breakthrough opportunities, learn from other talented artists, and expand their creative outlook.</p>
+    <div class="page-section p-0" id="mission">
+      <div class="d-flex align-items-center justify-content-center vh-100">
+        <div class="row justify-content-center align-items-start w-100 p-3">
+          <div class="col-lg-4 mission-header-content">
+            <img class="mission-header-bubble" src="./assets/img/ellipse1.png"/>
+            <div class="mission-text-wrapper">
+              <div class="mb-4 fs-vlarge">Growth in the music industry revolves around networking</div>
+              <div>It is how creators come across breakthrough opportunities, learn from other talented artists, and expand their creative outlook. </div>
           </div>
-          <div class = "col-sm-5 col-lg-4 pr-6">
-            <img class="pastleBubble" src="./assets/img/ellipse2.png"/>
-            <p class = "fs-large fw-bold" style = "position: absolute;">But small creators sparsely network</p>
-            <p class = "mt-7">because they feel that it is tedious, disingenuous,”like a means to an end.” They  sacrifice attending to this crucial component of their success.</p>
           </div>
-          <div class = "col-sm-8 col-lg-4">
+          <div class="col-lg-4 mission-header-content">
+            <img class="mission-header-bubble" src="./assets/img/ellipse2.png"/>
+            <div class="mission-text-wrapper">
+              <div class="mb-4 fs-vlarge">But small creators sparsely network</div>
+              <div>because they feel that it is tedious, disingenuous,”like a means to an end.” They  sacrifice attending to this crucial component of their success. </div>
+            </div>
+          </div>
+          <!-- Flexbox containing the 'We want to change that' -->
+          <div class="col-lg-2 mission-cta d-flex">
+              <p class="fs-vlarge">We want to change that.</p>
+          </div>
+
+
+
+          <!-- <div class="col-lg-4 mission-container h-100">
+            <div class="mission-container-header">
+              <p class = "fs-vlarge fw-bold">Growth in the music industry revolves around networking</p>
+            </div>
+            <div>
+              <p class = "">It is how creators come across breakthrough opportunities, learn from other talented artists, and expand their creative outlook.</p>
+            </div>
+          </div>
+          <div class = "col-lg-4 mission-container h-100">
+            <div class="mission-container-header">
+              <p class = "fs-vlarge fw-bold">But small creators sparsely network</p>
+            </div>
+            <div>
+              <p class = "">because they feel that it is tedious, disingenuous,”like a means to an end.” They  sacrifice attending to this crucial component of their success.</p>
+            </div>
+          </div>
+          <div class="align-self-center">
             <p class = "fs-vlarge fw-bold"> We want to change that.</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -189,13 +208,14 @@
     <div class="page-section mt-5" id = "info">
       <div class="container">
         <div class="row">
-          <div class = "col-sm-5 col-lg-6 pr-6">
+          <div class = "col-lg-6 ">
             <p class = "fs-vlarge fw-bold" style = "margin-top: 40%; line-height:2;">Med-fi Prototype</p>
             <p>Experience the prototype in Figma</p>
-            <a class = "button" href="https://www.figma.com/proto/aCPXVxwhwWhiiIQzvE5QbN/sprout-medfi?node-id=391%3A59089&viewport=307%2C5%2C0.20472203195095062&scaling=scale-down" target="_blank"> Explore</a>
+            <a class = "button" href="https://www.figma.com/proto/aCPXVxwhwWhiiIQzvE5QbN/sprout-medfi?node-id=387%3A56111&scaling=scale-down" target="_blank"> Explore</a>
           </div>
-          <div class="col-lg-5 mt-5">
-            <img class = "img-contain" style="width:70%;" src = "assets/img/sprout-browse2.png"/>
+          <div class="col-lg-6">
+            <div class="d-flex justify-content-center align-items-center">
+              <img class = "img-contain" style="width:50%;" src = "assets/img/sprout-browse2.png"/>
             </div>
           </div>
         </div>
