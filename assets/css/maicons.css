@@ -1,17 +1,14 @@
 @font-face {
   font-family: "maicons";
-  src: url("../fonts/maicons.eot?c9nlkl");
-  /* src:  url('../fonts/maicons.eot?c9nlkl#iefix') format('embedded-opentype'),
-    url('../fonts/maicons.ttf?c9nlkl') format('truetype'),
-    url('../fonts/maicons.woff?c9nlkl') format('woff'),
-    url('../fonts/maicons.svg?c9nlkl#maicons') format('svg'); */
-  src: url("../fonts/maicons.eot?c9nlkl#iefix") format("embedded-opentype"),
-    url("../fonts/Kollektif.ttf?c9nlkl") format("truetype");
-  /* url('../fonts/maicons.woff?c9nlkl') format('woff'),
-    url('../fonts/maicons.svg?c9nlkl#maicons') format('svg'); */
-  font-weight: normal;
+  src: url("../fonts/Kollektif.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Kollektif.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/Kollektif.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/Kollektif.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/Kollektif.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Kollektif.svg#svgFontName")
+      format("svg"); /* Legacy iOS */
   font-style: normal;
-  font-display: block;
 }
 
 [class^="mai-"],

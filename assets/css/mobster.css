@@ -5,10 +5,24 @@
  * License under CC 4.0 ()
  */
 
-@font-face {
+/* @font-face {
   font-family: myFont;
   src: url(/assets/fonts/Kollektif-Bold.ttf);
+} */
+
+@font-face {
+  font-family: "Kollektif";
+  src: url("../fonts/Kollektif.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Kollektif.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/Kollektif.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/Kollektif.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/Kollektif.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Kollektif.svg#svgFontName")
+      format("svg"); /* Legacy iOS */
+  font-style: normal;
 }
+
 :root {
   --primary: #3d58f3;
   --secondary: #a52eff;
@@ -32,7 +46,7 @@ html {
 }
 
 body {
-  font-family: myFont;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.3;
   color: black;
@@ -1431,6 +1445,10 @@ hr {
   border-width: 2px;
 }
 
+.try-prototype {
+  margin-top: 56px;
+}
+
 .btn-primary {
   color: #ffffff;
   background-color: #3d58f3;
@@ -2200,6 +2218,18 @@ hr {
   }
 }
 
+#team {
+  padding: 10%;
+  background-image: url("../img/team-bg.png");
+}
+
+.team-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* align-items: center; */
+}
+
 .page-hero-section {
   position: relative;
   height: 100vh;
@@ -2215,6 +2245,8 @@ hr {
 
 .page-section {
   position: relative;
+  padding-right: 30px;
+  padding-left: 30px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -2434,6 +2466,7 @@ hr {
   max-width: 100%;
 }
 
+/* When the screen > 992 */
 @media (min-width: 992px) {
   .mission-header-content {
     margin-bottom: 0px;
@@ -2442,6 +2475,42 @@ hr {
   .mission-text-wrapper {
     max-width: 75%;
   }
+
+  .page-section {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  #elsie {
+    position: absolute;
+    top: -10%;
+    left: -3%;
+  }
+
+  #alix {
+    position: absolute;
+    top: 33%;
+    left: 25%;
+  }
+
+  #jialin {
+    position: absolute;
+    top: 33%;
+    left: 55%;
+  }
+  #cons {
+    position: absolute;
+    right: -3%;
+    top: -10%;
+  }
+
+  .team-row {
+    position: relative;
+  }
+
+  .dummy-team {
+    display: black;
+  }
 }
 
 .mission-header-bubble {
@@ -2449,6 +2518,18 @@ hr {
   top: -15px;
   left: 0;
   z-index: -1000;
+}
+
+.dummy-team {
+  display: hidden;
+}
+
+.video-responsive {
+  margin: 0;
+}
+
+.med-fi-title {
+  margin-bottom: 40px;
 }
 
 .mission-cta {
@@ -2512,6 +2593,14 @@ hr {
 @media (min-width: 992px) {
   .row-beam-lg > *:not(:last-child) {
     border-right: 2px solid #f3f1f8;
+  }
+
+  .video-responsive {
+    margin: 5;
+  }
+
+  .med-fi-title {
+    margin-bottom: 0;
   }
 }
 

@@ -32,6 +32,9 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.css" />
 
     <link rel="stylesheet" href="./assets/css/mobster.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <style>
     .button {
       background-color: #8159e2;
@@ -59,7 +62,7 @@
   </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-floating">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-floating sprout-nav">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="./assets/sprout.png" alt="" width="50" />
@@ -80,13 +83,13 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav ml-auto mt-3 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#process">Process</a>
+              <a class="nav-link" href="#process">PROCESS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#team">Team</a>
+              <a class="nav-link" href="#team">TEAM</a>
             </li>
           </ul>
           <!-- <div class="ml-auto my-2 my-lg-0">
@@ -114,7 +117,7 @@
                 <div class="title mb-2">
                   <span class="fs-vvvlarge fw-bold title">creatively</span>
                 </div>
-                <a href="#" class="btn btn-dark rounded-pill">Try Prototype</a>
+                <a href="#" class="btn btn-dark rounded-pill try-prototype">Try Prototype</a>
             </div>
             <div class="col-lg-6 d-none d-lg-block wow zoomIn">
               <div class="bubbles-container floating-animate">
@@ -144,53 +147,43 @@
           <div class="col-lg-4 mission-header-content">
             <img class="mission-header-bubble" src="./assets/img/ellipse1.png"/>
             <div class="mission-text-wrapper">
-              <div class="mb-4 fs-vlarge">Growth in the music industry revolves around networking</div>
+              <div class="mb-4 fs-vlarge fw-bold">Growth in the music industry revolves around networking</div>
               <div>It is how creators come across breakthrough opportunities, learn from other talented artists, and expand their creative outlook. </div>
           </div>
           </div>
           <div class="col-lg-4 mission-header-content">
             <img class="mission-header-bubble" src="./assets/img/ellipse2.png"/>
             <div class="mission-text-wrapper">
-              <div class="mb-4 fs-vlarge">But small creators sparsely network</div>
+              <div class="mb-4 fs-vlarge fw-bold">But small creators sparsely network
+              </div>
               <div>because they feel that it is tedious, disingenuous,”like a means to an end.” They  sacrifice attending to this crucial component of their success. </div>
             </div>
           </div>
           <!-- Flexbox containing the 'We want to change that' -->
           <div class="col-lg-2 mission-cta d-flex">
-              <p class="fs-vlarge">We want to change that.</p>
+              <p class="fs-vlarge fw-bold">We want to change that.</p>
           </div>
-
-
-
-          <!-- <div class="col-lg-4 mission-container h-100">
-            <div class="mission-container-header">
-              <p class = "fs-vlarge fw-bold">Growth in the music industry revolves around networking</p>
-            </div>
-            <div>
-              <p class = "">It is how creators come across breakthrough opportunities, learn from other talented artists, and expand their creative outlook.</p>
-            </div>
-          </div>
-          <div class = "col-lg-4 mission-container h-100">
-            <div class="mission-container-header">
-              <p class = "fs-vlarge fw-bold">But small creators sparsely network</p>
-            </div>
-            <div>
-              <p class = "">because they feel that it is tedious, disingenuous,”like a means to an end.” They  sacrifice attending to this crucial component of their success.</p>
-            </div>
-          </div>
-          <div class="align-self-center">
-            <p class = "fs-vlarge fw-bold"> We want to change that.</p>
-          </div> -->
         </div>
       </div>
     </div>
     <!-- End Mission -->
 
     <!-- Info -->
-    <div class="page-section">
-      <div class="container">
-        <div class="row">
-            <div class = "col-sm-5 col-lg-4 mr-8" style = "z-index: 10;">
+    <div class="page-section" id="info">
+      <div class="d-flex align-items-center justify-content-center vh-100">
+        <div class="row align-items-center">
+          <div class="col-lg-5 mission-header-content">
+            <div class="fs-vvlarge fw-bold mb-4">Networking can feel fun, organic and exciting.</div>
+            <div class="mb-4">Sprout is a space for creators to network through “Music Trains” by chaining short soundbites to each other’s work (inspired by the “Pass the Story”  icebreaker from our pre-school memories).</div>
+            <!-- <img class="img-contain" src = "./assets/img/music_freq.png" /> -->
+            <img class="img-contain" src="./assets/img/music-player.svg" />
+
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-6 video-responsive text-center d-flex justify-content-center align-items-center embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZXNvdcRs0hA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+            <!-- <div class = "col-sm-5 col-lg-4 mr-8" style = "z-index: 10;">
               <p class = "fs-vlarge fw-bold"> Networking can feel fun, organic and exciting.</p>
               <p>Sprout is a space for creators to network through “Music Trains” by chaining short soundbites to each other’s work (inspired by the “Pass the Story”  icebreaker from our pre-school memories).</p>
               <img class = "img-contain" src = "./assets/img/music_freq.png" />
@@ -198,7 +191,7 @@
             <img class="hero-background" src="./assets/hero-background-copy.png"/>
             <div class="col-sm-5" style = "z-index: 10;">
               <iframe style="overflow:auto;" width="560" height="315" src="https://www.youtube.com/embed/ZXNvdcRs0hA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            </div> -->
         </div>
       </div>
     </div>
@@ -207,9 +200,9 @@
     <!-- Mid-Fi Prototype -->
     <div class="page-section mt-5" id = "info">
       <div class="container">
-        <div class="row">
-          <div class = "col-lg-6 ">
-            <p class = "fs-vlarge fw-bold" style = "margin-top: 40%; line-height:2;">Med-fi Prototype</p>
+        <div class="row justify-content-center align-items-center">
+          <div class = "col-lg-6 med-fi-title">
+            <p class = "fs-vvlarge fw-bold">Med-fi Prototype</p>
             <p>Experience the prototype in Figma</p>
             <a class = "button" href="https://www.figma.com/proto/aCPXVxwhwWhiiIQzvE5QbN/sprout-medfi?node-id=387%3A56111&scaling=scale-down" target="_blank"> Explore</a>
           </div>
@@ -460,34 +453,25 @@
       </div>
     </div>
     <!---------- TEAM ---------->  
-    <div class="page-section bg-gray" id="team">
+    <div class="page-section" id="team">
       <div class="container">
-        
         <p class="text-center fs-vvlarge fw-bold">The Team</h1>
-        <div class="row justify-content-center mt-5">
-          <div>
-            <div class="mb-4 members">
-            <img src="./assets/img/team/elsie.png" alt="Elsie" />
-            </div>
-            <p class="fs-large">Elsie Wang</p>
+        <div class="row justify-content-center mt-5 team-row">
+          <div class="mb-4 floating-animate" id="elsie">
+            <img src="./assets/img/elsie.svg" alt="Elsie" />
           </div>
-          <div>
-            <div class="mb-4 members">
-              <img src="./assets/img/team/alix.png" alt="Alix" />
-            </div>
-            <p class="fs-large">Alix Cui</p>
+          <div class="mb-4 floating-animate" id="alix">
+            <img src="./assets/img/alix.svg" alt="Alix" />
           </div>
-          <div>
-            <div class="mb-4 members">
-              <img src="./assets/img/team/jialin.png" alt="Jialin" />
-            </div>
-            <p class="fs-large">Jialin Zhuo</p>
+          <div class="mb-4 floating-animate" id="jialin">
+            <img src="./assets/img/jialin.svg" alt="Jialin" />
           </div> 
-          <div>
-            <div class="mb-4 members">
-              <img src="./assets/img/team/constance.png" alt="Constance" />
-            </div>
-            <p class="fs-large">Constance Horng</p>
+          <div class="mb-4 floating-animate" id="cons">
+            <img src="./assets/img/constance.svg" alt="Constance" />
+          </div>
+          <!-- dummy for height -->
+          <div class="mb-4 dummy-team" style="visibility: hidden">
+            <img src="./assets/img/constance.svg" alt="Constance" />
           </div>
         </div>
       </div>
