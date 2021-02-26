@@ -2466,6 +2466,17 @@ hr {
   max-width: 100%;
 }
 
+.dummy-team {
+  display: none;
+}
+
+#elsie,
+#alix,
+#jialin,
+#cons {
+  margin: 5px;
+}
+
 /* When the screen > 992 */
 @media (min-width: 992px) {
   .mission-header-content {
@@ -2509,7 +2520,8 @@ hr {
   }
 
   .dummy-team {
-    display: black;
+    visibility: hidden;
+    display: block;
   }
 }
 
@@ -2518,10 +2530,6 @@ hr {
   top: -15px;
   left: 0;
   z-index: -1000;
-}
-
-.dummy-team {
-  display: hidden;
 }
 
 .video-responsive {
