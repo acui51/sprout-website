@@ -2198,6 +2198,11 @@ hr {
   box-shadow: 0 1px 6px rgba(56, 51, 64, 0.1);
 }
 
+#team {
+  padding: 10%;
+  background-image: url("../img/team-bg.png");
+}
+
 @media (min-width: 992px) {
   .navbar-expand-lg.navbar-floating {
     top: 20px;
@@ -2216,12 +2221,12 @@ hr {
     background-color: transparent;
     box-shadow: none;
   }
-}
 
-#team {
-  padding: 10%;
-  background-image: url("../img/team-bg.png");
-  background-size: 100% auto;
+  #team {
+    padding: 10%;
+    background-image: url("../img/team-bg.png");
+    background-size: 100% auto;
+  }
 }
 
 .team-row {
