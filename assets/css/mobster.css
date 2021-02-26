@@ -2259,7 +2259,7 @@ hr {
 
 .page-footer-section {
   position: relative;
-  padding-top: 100px;
+  padding-top: 30px;
   padding-bottom: 20px;
   background-color: #f0eef5;
 }
@@ -2530,10 +2530,6 @@ hr {
 
 .med-fi-title {
   margin-bottom: 40px;
-}
-
-.mission-cta {
-  text-align: center;
 }
 
 .ratings * {
