@@ -2221,6 +2221,7 @@ hr {
 #team {
   padding: 10%;
   background-image: url("../img/team-bg.png");
+  background-size: 100% auto;
 }
 
 .team-row {
@@ -2247,8 +2248,8 @@ hr {
   position: relative;
   padding-right: 30px;
   padding-left: 30px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
 }
 
 .page-section:not(.fg-white) h1,
