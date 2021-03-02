@@ -2229,6 +2229,9 @@ hr {
   }
 }
 
+
+
+
 .team-row {
   display: flex;
   flex-flow: row wrap;
@@ -2249,12 +2252,33 @@ hr {
   height: 100%;
 }
 
+/* Smaller than lg (992 px) */
 .page-section {
   position: relative;
   padding-right: 30px;
   padding-left: 30px;
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Small width */
+@media (min-width: 576px) {
+  .page-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  #info {
+    padding-top: 150px;
+  }
+}
+
+/* Medium width */
+@media (min-width: 768px) {
+  .page-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .page-section:not(.fg-white) h1,
@@ -2496,6 +2520,8 @@ hr {
   .page-section {
     padding-left: 10vw;
     padding-right: 10vw;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   #elsie {
