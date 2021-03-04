@@ -48,7 +48,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  line-height: 1.3;
+  line-height: 1.5;
   color: black;
 }
 
@@ -439,7 +439,11 @@ hr {
   margin: 4rem !important;
 }
 
+.mt-10 {
+  margin-top: 300px !important;
+}
 .mt-6,
+
 .my-6 {
   margin-top: 4rem !important;
 }
@@ -1201,7 +1205,31 @@ hr {
 .bubbles-container {
   position: relative;
 }
-
+.bubble-1 {
+  position: absolute;
+  right: 400px !important;
+  top: -170px !important;
+}
+.bubble-2 {
+  position: absolute;
+  right: 200px !important;
+  top: -200px !important;
+}
+.bubble-3 {
+  position: absolute;
+  right: 50px !important;
+  top: -80px !important;
+}
+.bubble-4 {
+  position: absolute;
+  right: 380px !important;
+  top: 0px !important;
+}
+.bubble-5 {
+  position: absolute;
+  right: 210px !important;
+  top: 50px !important;
+}
 .img-place {
   position: relative;
   display: flex;
@@ -2241,7 +2269,7 @@ hr {
 
 .page-hero-section {
   position: relative;
-  height: 100vh;
+  height: 100%;
 }
 
 .page-hero-section h1 {
@@ -2343,6 +2371,15 @@ hr {
 
 .floating-animate {
   animation: bounceLimit 4s linear infinite;
+}
+.floating-animate1 {
+  animation: bounceLimit 2s linear infinite;
+}
+.floating-animate2 {
+  animation: bounceLimit 3s linear infinite;
+}
+.floating-animate3 {
+  animation: bounceLimit 5s linear infinite;
 }
 
 @keyframes bounceLimit {
@@ -2469,6 +2506,12 @@ hr {
 
 .vh-100 {
   height: 100vh;
+}
+.vh-80 {
+  height: 80vh;
+}
+.vh-60 {
+  height: 60vh;
 }
 
 .mission-container {
