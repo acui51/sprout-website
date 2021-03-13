@@ -443,7 +443,6 @@ hr {
   margin-top: 300px !important;
 }
 .mt-6,
-
 .my-6 {
   margin-top: 4rem !important;
 }
@@ -2257,9 +2256,6 @@ hr {
   }
 }
 
-
-
-
 .team-row {
   display: flex;
   flex-flow: row wrap;
@@ -2296,9 +2292,9 @@ hr {
     padding-bottom: 100px;
   }
 
-  #info {
+  /* #info {
     padding-top: 150px;
-  }
+  } */
 }
 
 /* Medium width */
@@ -2522,7 +2518,7 @@ hr {
 }
 
 .mission-cta {
-  align-self: center;
+  align-self: flex-start;
 }
 
 .mission-text {
