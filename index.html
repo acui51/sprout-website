@@ -47,6 +47,11 @@
       font-size: 12px;
       margin: 4px 2px;
       cursor: pointer;
+      width: 100%;
+    }
+    .button:hover {
+      color: white;
+      text-decoration: none;
     }
     .members {
       position: relative;
@@ -83,7 +88,7 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav ml-auto mt-3 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
+              <a class="nav-link" href="#mission">ABOUT</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#process">PROCESS</a>
@@ -238,19 +243,25 @@
               class="card card-body border-0 bg-transparent text-center wow zoomIn"
             >
               <div class="mb-3">
-                <img src="./assets/img/process/needfinding.svg" alt="" />
+                <img src="./assets/img/process/needfinding.svg" style="width: 100%" alt="" />
               </div>
               <p class="fs-large">Needfinding</p>
               <p class="fs-small fg-grey">
-                <a
+                <!-- <a
                   href="./assets/docs/needfinding/needfinding.pdf"
                   target="_blank"
                   >Needfinding PDF</a
-                >
+                > -->
+                <a class="button" href="./assets/docs/needfinding/needfinding.pdf" target="_blank"><i class="far fa-file-pdf"></i> Presentation (.PDF)</a>
+
               </br>
-                <a href="./assets/docs/needfinding/needfinding.pptx">
+                <!-- <a href="./assets/docs/needfinding/needfinding.pptx">
                   Needfinding Presentation
-                </a></br>
+                </a> -->
+                <a class="button" href="./assets/docs/needfinding/needfinding.pptx" target="_blank"><i class="far fa-file-powerpoint"></i> Presentation (.PPTX)</a>
+
+          
+              </br>
                 
               </p>
             </div>
@@ -261,12 +272,16 @@
               data-wow-delay="200ms"
             >
               <div class="mb-3">
-                <img style="height: 246;" src="./assets/img/process/pov.svg" alt="" />
+                <img  src="./assets/img/process/pov.svg" style="width: 100%" alt="" />
               </div>
               <p class="fs-large">POVs</p>
               <p class="fs-small fg-grey">
-                <a href="./assets/docs/pov/pov.pdf" target="_blank">POV PDF</a></br>
-                <a href="./assets/docs/pov/pov.pptx">POV Presentation</a></br>
+                <!-- <a href="./assets/docs/pov/pov.pdf" target="_blank">POV PDF</a></br> -->
+                <a class="button" href="./assets/docs/pov/pov.pdf" target="_blank"><i class="far fa-file-pdf"></i> Presentation (.PDF)</a>
+              </br>
+                <!-- <a href="./assets/docs/pov/pov.pptx">POV Presentation</a></br> -->
+                <a class="button" href="./assets/docs/pov/pov.pptx" target="_blank"><i class="far fa-file-powerpoint"></i> Presentation (.PPTX)</a>
+
               </p>
             </div>
           </div>
@@ -276,19 +291,22 @@
               data-wow-delay="300ms"
             >
               <div class="mb-3">
-                <img src ="./assets/img/process/lofi.svg" alt="" />
+                <img src ="./assets/img/process/lofi.svg" style="width: 100%" alt="" />
               </div>
               <p class="fs-large">LoFi</p>
-              <p class="fs-small fg-grey">
+              <!-- <p class="fs-small fg-grey"> -->
                 <div>
-                <a href="./assets/docs/lofi/lofi.pdf" target="_blank"
+                <!-- <a href="./assets/docs/lofi/lofi.pdf" target="_blank"
                   >LoFi PDF</a
-                >
+                > -->
+                <a class="button" href="./assets/docs/lofi/lofi.pdf" target="_blank"><i class="far fa-file-pdf"></i> Presentation (.PDF)</a>
+
               </div>
               <div>
-                <a href="./assets/docs/lofi/lofi.pptx">LoFi Presentation</a>
+                <!-- <a href="./assets/docs/lofi/lofi.pptx">LoFi Presentation</a> -->
+                <a class="button" href="./assets/docs/lofi/lofi.pptx" target="_blank"><i class="far fa-file-powerpoint"></i> Presentation (.PPTX)</a>
               </div>
-              </p>
+              <!-- </p> -->
             </div>
           </div>
           <div class="col-md-6 col-lg-3 py-3">
@@ -300,18 +318,22 @@
                 <img src="./assets/img/process/concept_video.svg" alt="" />
               </div>
               <p class="fs-large">Concept Video</p>
-              <p class="fs-small fg-grey">
+              <!-- <p class="fs-small fg-grey"> -->
                 <div>
-                <a href="./assets/docs/conceptvideo/concept.pdf" target="_blank"
+                <!-- <a href="./assets/docs/conceptvideo/concept.pdf" target="_blank"
                   >Concept Video PDF</a
-                >
+                > -->
+                <a class="button" href="./assets/docs/conceptvideo/concept.pdf" target="_blank"><i class="far fa-file-pdf"></i> Presentation (.PDF)</a>
+
               </div>
               <div>
-                <a href="./assets/docs/conceptvideo/concept.pptx"
+                <!-- <a href="./assets/docs/conceptvideo/concept.pptx"
                   >Concept Video Presentation</a
-                >
+                > -->
+                <a class="button" href="./assets/docs/conceptvideo/concept.pptx" target="_blank"><i class="far fa-file-powerpoint"></i> Presentation (.PPTX)</a>
+
               </div>
-              </p>
+              <!-- </p> -->
             </div>
           </div>
           <div class="col-md-6 col-lg-3 py-3">
@@ -320,20 +342,16 @@
               data-wow-delay="800ms"
             >
               <div class="mb-3">
-                <img src="./assets/img/process/medfi.svg" alt="" />
+                <img src="./assets/img/process/medfi.svg" style="width: 100%"alt="" />
               </div>
               <p class="fs-large">MedFi</p>
               <p class="fs-small fg-grey">
-                <div>
-                <a href="./assets/docs/medfi/medfi.pdf" target="_blank"
-                  >MedFi PDF</a
-                ></div>
-                <div>
-                <a href="./assets/docs/medfi/medfi.pptx">MedFi Presentation</a>
-              </div>
-              <div>
-                <a href="./assets/docs/medfi/README.pdf">MedFi README</a>
-              </div>
+
+                <a class="button" href="./assets/docs/medfi/medfi.pdf" target="_blank"><i class="far fa-file-pdf"></i> Presentation (.PDF)</a>
+                <a class="button" href="./assets/docs/medfi/medfi.pptx" target="_blank"><i class="far fa-file-powerpoint"></i> Presentation (.PPTX)</a>
+                <a class="button" href="./assets/docs/medfi/README.pdf" target="_blank"><i class="far fa-file-pdf"></i> README (.PDF)</a>
+
+                <!-- <a href="./assets/docs/medfi/README.pdf">MedFi README</a> -->
               </p>
             </div>
           </div>
@@ -343,11 +361,13 @@
               data-wow-delay="1000ms"
             >
               <div class="mb-3">
-                <img src="./assets/img/process/HE.svg" alt="" />
+                <img src="./assets/img/process/HE.svg" style="width: 100%" alt="" />
               </div>
               <p class="fs-large">Heuristic Evalution</p>
               <p class="fs-small fg-grey">
-                <a href="./assets/docs/HEs/groupHE.pdf">Group Heuristic Evaluation</a>
+                <!-- <a href="./assets/docs/HEs/groupHE.pdf">Group Heuristic Evaluation</a> -->
+                <a class="button" href="./assets/docs/HEs/groupHE.pdf" target="_blank"><i class="far fa-file-pdf"></i> Presentation (.PDF)</a>
+
               </p>
             </div>
           </div>
@@ -357,18 +377,21 @@
               data-wow-delay="1000ms"
             >
               <div class="mb-3">
-                <img src="./assets/img/process/HiFi.svg" alt="" />
+                <img src="./assets/img/process/HiFi.svg" style="width: 100%" alt="" />
               </div>
               <p class="fs-large">HiFi</p>
               <p class="fs-small fg-grey">
-                <div>
-                <a href="./assets/docs/hifi/hifi.pdf" target="_blank"
+                <!-- <a href="./assets/docs/hifi/hifi.pdf" target="_blank"
                   >Hi-Fi PDF</a
-                >
-              </div>
-              <div>
-                <a href="https://www.figma.com/proto/L9WwScC371BEBw9K1sbYGg/Sprout-Hi-Fi?node-id=1867%3A18301&scaling=min-zoom">HiFi Figma Presentation</a>
-              </div>
+                > -->
+                <a class="button" href="./assets/docs/hifi/sprout-app.zip" target="_blank"><i class="fas fa-code"></i> Prototype (.ZIP)</a>
+                <a class="button" href="./assets/docs/hifi/hifi.pdf" target="_blank"><i class="far fa-file-pdf"></i> Presentation (.PDF)</a>
+                <a class="button" href="./assets/docs/hifi/hifi_readme.pdf" target="_blank"><i class="far fa-file-pdf"></i> README (.PDF)</a>
+                <a class="button" href="./assets/docs/hifi/hifi.pdf" target="_blank"><i class="far fa-file-pdf"></i> Presentation (.PDF)</a>
+                <a class="button" href="./assets/docs/hifi/hifi.pptx" target="_blank"><i class="far fa-file-powerpoint"></i> Presentation (.PPTX)</a>
+
+
+                <a class="button" href="https://www.figma.com/proto/L9WwScC371BEBw9K1sbYGg/Sprout-Hi-Fi?node-id=1867%3A18301&scaling=min-zoom"><i class="fab fa-figma"></i> Prototype (.FIGMA)</a>
               </p>
             </div>
           </div>
@@ -378,11 +401,13 @@
               data-wow-delay="1000ms"
             >
               <div class="mb-3">
-                <img src="./assets/img/process/placeholder.png" alt="" />
+                <img src="./assets/img/pitch_deck.svg" style="width: 100%" alt="" />
               </div>
               <p class="fs-large">Poster & Pitch</p>
               <p class="fs-small fg-grey">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                <a class="button" href="./assets/img/pitch_deck.png"><i class="far fa-image"></i> Pitch Deck (.PNG)</a>
+                <a class="button" href="./assets/img/psoter.png"><i class="far fa-image"></i> Poster (.PNG)</a>
+
               </p>
             </div>
           </div>
@@ -395,16 +420,18 @@
         <p class="text-center fs-vvlarge fw-bold">The Team</h1>
         <div class="row justify-content-center mt-5 team-row">
           <div class="mb-4 floating-animate3" id="elsie">
-            <img src="./assets/img/team/elsie.svg" alt="Elsie" />
+            <img src="./assets/img/ElsieWang.svg" alt="Elsie" />
           </div>
           <div class="mb-4 floating-animate1" id="alix">
-            <img src="./assets/img/team/alix.svg" alt="Alix" />
+            <a href="https://www.linkedin.com/in/alix-cui/" target="_blank">
+            <img src="./assets/img/AlixCui.svg" alt="Alix" />
+            </a>
           </div>
           <div class="mb-4 floating-animate2" id="jialin">
-            <img src="./assets/img/team/jialin.svg" alt="Jialin" />
+            <img src="./assets/img/JialinZhuo.svg" alt="Jialin" />
           </div> 
           <div class="mb-4 floating-animate" id="cons">
-            <img src="./assets/img/team/constance.svg" alt="Constance" />
+            <img src="./assets/img/ConstanceHorng.svg" alt="Constance" />
           </div>
           <!-- dummy for height -->
           <div class="mb-4 dummy-team">
