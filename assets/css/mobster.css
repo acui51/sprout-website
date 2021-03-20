@@ -2546,8 +2546,44 @@ hr {
   margin: 5px;
 }
 
+
+#hifi-logo-wrapper {
+  flex-direction: column;
+}
+
+/* small screen < 992 */
+  .rn-hifi {
+    /* height: 25%; */
+    width: 40%;
+  }
+
+  .firebase-hifi {
+    /* height: 25%; */
+    width: 40%;
+
+  }
+
+  .expo-hifi {
+    /* height: 25%; */
+    width: 40%;
+
+  }
+
+  .figma-hifi {
+    /* height: 25%; */
+    width: 40%;
+
+  }
+
+  #info {
+    padding-bottom: 300px;
+  }
+
 /* When the screen > 992 */
 @media (min-width: 992px) {
+  #hifi-logo-wrapper {
+    flex-direction: row;
+  }
   .mission-header-content {
     margin-bottom: 0px;
   }
@@ -2593,6 +2629,41 @@ hr {
   .dummy-team {
     visibility: hidden;
     display: block;
+  }
+
+  .rn-hifi {
+    position: absolute;
+    height: 33%;
+        width: auto;
+
+    left: 5%;
+    top: 50%;
+  }
+
+  .firebase-hifi {
+    position: absolute;
+    height: 33%;
+    width: auto;
+    left: 15%;
+    top: 5%;
+  }
+
+  .expo-hifi {
+    position: absolute;
+    height: 33%;
+        width: auto;
+
+    right: 15%;
+    top: 5%;
+  }
+
+  .figma-hifi {
+    position: absolute;
+    height: 33%;
+        width: auto;
+
+    right: 5%;
+    top: 50%;
   }
 }
 
