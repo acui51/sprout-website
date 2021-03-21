@@ -50,6 +50,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: black;
+
+  /* overflow: hidden; */
+
 }
 
 a {
@@ -1352,6 +1355,19 @@ hr {
   flex-basis: calc(100% - 100px);
 }
 
+.page-container {
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.page {
+  /* height: 100vh; */
+  scroll-snap-align: start;
+  position: relative;
+
+}
+
 /* List */
 .theme-list {
   position: relative;
@@ -2209,6 +2225,7 @@ hr {
   left: 0;
   width: 100%;
   z-index: 99;
+  background-color: transparent;
 }
 
 .navbar-nav .nav-link {
@@ -2555,29 +2572,61 @@ hr {
   .rn-hifi {
     /* height: 25%; */
     width: 40%;
+    /* display: none; */
   }
 
   .firebase-hifi {
     /* height: 25%; */
     width: 40%;
+    /* display: none; */
 
   }
 
   .expo-hifi {
     /* height: 25%; */
     width: 40%;
+    /* display: none; */
 
   }
 
   .figma-hifi {
     /* height: 25%; */
     width: 40%;
+    /* display: none; */
 
   }
 
   #info {
     padding-bottom: 300px;
   }
+
+  @media (max-width: 992px) {
+    .figma-hifi {
+      display: none;
+    }
+
+    .expo-hifi {
+      display: none;
+    }
+
+    .rn-hifi {
+      display: none;
+    }
+
+    .firebase-hifi {
+      display: none;
+    }
+
+    .qr-hifi {
+      width: 50%;
+      height: auto;
+      position: absolute;
+      /* top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) */
+    }
+  }
+
 
 /* When the screen > 992 */
 @media (min-width: 992px) {
@@ -2590,6 +2639,10 @@ hr {
 
   .mission-text-wrapper {
     max-width: 75%;
+  }
+
+  #info {
+    /* margin-top: 100px; */
   }
 
   .page-section {
@@ -2633,37 +2686,43 @@ hr {
 
   .rn-hifi {
     position: absolute;
-    height: 33%;
+    height: 20%;
         width: auto;
 
-    left: 5%;
-    top: 50%;
+    left: 20%;
+    top: 45%;
   }
 
   .firebase-hifi {
     position: absolute;
-    height: 33%;
+    height: 20%;
     width: auto;
-    left: 15%;
-    top: 5%;
+    left: 20%;
+    top: 15%;
   }
 
   .expo-hifi {
     position: absolute;
-    height: 33%;
+    height: 20%;
         width: auto;
 
-    right: 15%;
-    top: 5%;
+    right: 20%;
+    top: 15%;
   }
 
   .figma-hifi {
     position: absolute;
-    height: 33%;
+    height: 20%;
         width: auto;
 
-    right: 5%;
-    top: 50%;
+    right: 20%;
+    top: 45%;
+  }
+
+  .qr-hifi {
+    height: 33%;
+    position: absolute;
+    top: 25%;
   }
 }
 
